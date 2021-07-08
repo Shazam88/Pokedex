@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: blanchedalmond;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    letter-spacing: 3px;
+}
+.poke_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.pokemon {
+    margin: 15px;
+}
+.card {
+    margin-top:30px;
+    text-align: center;
+}
+
+.card .img-pokemon {
+    border-radius: 50%;
+    border: 1px solid #555;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    margin: 10px auto;
+    cursor: pointer;
+}
+.card .img-pokemon:hover {
+    -webkit-animation: tiembla 0.3s ;
+}
+  @-webkit-keyframes tiembla{
+    0%  { -webkit-transform:rotateZ(-5deg); }
+    50% { -webkit-transform:rotateZ( 0deg) scale(.9); }
+    100%{ -webkit-transform:rotateZ( 5deg); }
+  }
